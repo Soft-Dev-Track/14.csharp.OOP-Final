@@ -102,3 +102,7 @@ public record Person
 - Take advantage of records' built-in features like with expressions and deconstructors to simplify your code.
 
 Records provide a modern way to define data structures in C# that are concise, immutable, and easy to use, making them a valuable addition to the language for managing data integrity and simplicity in complex applications.
+
+--- 
+
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2pjajhiZHF0OXRybHVuNGp5ODVjdTQ5Z2locTRvdmEyaWxsa2QyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jam5tvnwAcBA4ZrbSO/giphy.gif)
