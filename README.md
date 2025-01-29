@@ -1,6 +1,11 @@
 # 14. OOP Structs and Records
 
-## 1. Introduction
+Before delving into the subject of this chapter, it is important to understand memory management for your future applications.
+
+![](https://csharpforbeginners.wordpress.com/wp-content/uploads/2012/06/stack-heap.jpg)
+https://csharpforbeginners.wordpress.com/2012/06/14/understanding-stack-and-heap-1/
+
+## 1. Stack VS Heap
 In C#, as in many programming languages, memory is divided into two main areas:
 
 - The stack
@@ -218,6 +223,34 @@ public record Person
 - Take advantage of records' built-in features like with expressions and deconstructors to simplify your code.
 
 Records provide a modern way to define data structures in C# that are concise, immutable, and easy to use, making them a valuable addition to the language for managing data integrity and simplicity in complex applications.
+
+## 4. Exercices
+
+### 1. Struct Basics:
+- Create a Point struct with X and Y properties.
+- Write a method to **calculate()** the distance between two points.
+- Test value-type behavior by copying the struct and observing changes.
+
+### 2. Immutable Struct:
+- Create an immutable struct Rectangle with width and height.
+- Add a method to calculate the area.
+- Emphasize that struct fields should be readonly for immutability.
+
+### 3. Record Basics:   
+- Create a Person record with Name and Age.
+- Demonstrate value-based equality by comparing two records with identical values.
+
+### 4. Combining Structs and Records:
+- Create a Shape record that has a Center (a Point struct) and a Radius.
+- Show how structs (value types) and records (reference types) interact.
+
+### 5. Performance Comparison:
+- Create an exercise to compare performance between structs and classes in scenarios with large data sets (e.g., using arrays of structs versus classes).
+
+### 6. Inheritance and Records:
+- Create a base record Person and a derived record Employee.
+- Show how records handle inheritance differently from classes (e.g., equality).
+
 
 --- 
 
