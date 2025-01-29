@@ -1,0 +1,15 @@
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\bin\Debug\net8.0\OOP.Part3.exe
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\bin\Debug\net8.0\OOP.Part3.deps.json
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\bin\Debug\net8.0\OOP.Part3.runtimeconfig.json
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\bin\Debug\net8.0\OOP.Part3.dll
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\bin\Debug\net8.0\OOP.Part3.pdb
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.AssemblyInfoInputs.cache
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.AssemblyInfo.cs
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.csproj.CoreCompileInputs.cache
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.sourcelink.json
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.dll
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\refint\OOP.Part3.dll
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.pdb
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\OOP.Part3.genruntimeconfig.cache
+C:\Users\BeCode\OneDrive\Documents\csharp-BeCode\Github_Classroom\14.csharp.OOP.Part3\Solution\OOP.Part3\obj\Debug\net8.0\ref\OOP.Part3.dll

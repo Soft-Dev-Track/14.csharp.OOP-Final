@@ -228,7 +228,7 @@ Records provide a modern way to define data structures in C# that are concise, i
 
 ### 1. Struct Basics:
 - Create a Point struct with X and Y properties.
-- Write a method to **calculate()** the distance between two points.
+- Write a method to **DistanceTo()** the distance between two points.
 - Test value-type behavior by copying the struct and observing changes.
 
 ### 2. Immutable Struct:
@@ -250,7 +250,6 @@ Records provide a modern way to define data structures in C# that are concise, i
 ### 6. Inheritance and Records:
 - Create a base record Person and a derived record Employee.
 - Show how records handle inheritance differently from classes (e.g., equality).
-
 
 --- 
 
