@@ -1,7 +1,123 @@
 # 14. OOP Structs and Records
-Il s'agit d'un chapitre assez court, mais qui est malgré tout important. Il est nécessaire que vous sachiez qu'il co-existe avec des classes et des interfaces, des structures et des records. Voyons de quoi il s'agit, à quoi ils servent, tout cela bien entendu par des exemples.
 
-## Structs
+## 1. Introduction
+In C#, as in many programming languages, memory is divided into two main areas:
+
+- The stack
+- The heap
+
+These two areas are used to store different kinds of data and operate in distinct ways. Let's take a closer look.
+
+### 1. The stack
+The stack is a fast memory area automatically managed by the system. It is used to store :
+
+- Local variables (declared in a method or code block).
+- Function parameters.
+- Return pointers (execution address after a method call).
+
+#### Stack characteristics:
+
+- Works like a stack of books: last in, first out (LIFO - Last In, First Out).
+- Automatic allocation/deallocation (when a method is called, memory is allocated; when it ends, it is freed).
+- Very fast, but limited in size.
+
+### 2. The heap
+The heap is a larger but slower memory area than the stack. It is used to store :
+    - Objects (class instances).
+    - Reference types.
+
+#### Heap features:
+- Dynamic allocation (managed by the Garbage Collector in C#).
+- Memory remains allocated as long as it is referenced by a variable.
+- Slower than the heap, as the system has to manage memory and reclaim unused space.
+
+### 3. Difference between value and reference types
+C# distinguishes between two main families of types:
+- **Value types (stored on the stack)**: int, double, bool, char, struct, enum.
+- **Reference types (stored in the heap)**: class, interface, string, array, object.
+
+### 4. Example
+Theory is good, but with an example, it is better
+
+```csharp
+void Main()
+{
+    int a = 5;
+    int b = a; 
+
+    Personn p1 = new Personn(); 
+    p1.Name = "Jean";
+    
+    Personn p2 = p1; 
+    
+    Console.WriteLine(p1.Name); // Jean
+    Console.WriteLine(p2.Name); // Jean
+
+    p2.Name = "Marie";
+    
+    Console.WriteLine(p1.Name); 
+}
+
+class Personn
+{
+    public string Name;
+}
+```
+
+Wait, I don't understand .... don't worry
+
+```csharp
+int a = 5;
+int b = a; 
+```
+
+- `a` is a variable of type `int`, which is a value type. It is stored in the **stack**.
+- `b` = a; creates an independent copy of `a`. Each has its own value in memory.
+
+| Stack            | Heap         
+| :--------------- |:---------------:| 
+| a = 5            |                 |
+| b = a (5)        |                 |
+
+- Changing `b` will not affect `a`, as they are totally independent.
+
+---
+
+```csharp
+Personn p1 = new Personn();
+p1.Nom = "Jean";
+```
+
+- `Personn` is a class, and therefore a `reference type`.
+- The instruction `new Personne()` creates an object in the **heap**.
+- `p1` is a reference (pointer) stored on the **stack**, pointing to the real object in memory.
+
+| Stack            | Heap         
+| :--------------- |:---------------:| 
+| a = 5            |                 |
+| b = a (5)        |                 |
+| p1 (ref)-------->|[Object Person]  |
+| p2 (ref)-------->|(Same Object) |
+
+--- 
+
+|Variable| Location | Value/Object
+| :--------------- |:---------------:| -------
+| a  | (Stack) | 5 |
+| b  | (Stack) | 5 (copy of a)|
+| p1 | Stack (Stack) | Reference to a Person object (Heap)|
+| p2 | Stack | Reference to same Person object|
+| Object | Person Tas (Heap) | Name = “Marie” (modified by p2)|
+
+### 5. When is an object deleted by Garbage Collector?
+Garbage Collector reclaims memory from unreferenced objects to prevent memory leaks.
+
+Conditions for an object to be deleted:
+- No more reference-type variables point to it.
+- The object becomes inaccessible to code.
+- The Garbage Collector decides to clean it up (this is not immediate, but done periodically).
+
+## 2. Structs
 In C#, structures (or structs) are value types that allow you to encapsulate data and related functionalities. They are often used to represent lightweight concepts such as points in a 2D or 3D space, sizes, ranges of values, and other data that is frequently copied without modifications.
 
 ### Characteristics of structs
@@ -54,7 +170,7 @@ In this example, `Point` is an immutable structure with read-only properties `X`
 
 Structures are a powerful tool in C# for modeling simple and lightweight concepts. Proper use can make your code both faster and easier to maintain.
 
-## Records
+## 3. Records
 Introduced in C# 9, records are reference types designed to be immutable by default. They are particularly useful for creating data objects whose values are not supposed to change after they are created.
 
 ### Characteristics of Records
